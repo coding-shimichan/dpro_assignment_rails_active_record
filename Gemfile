@@ -22,6 +22,12 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'rails-i18n'
+# Support for encoding and decoding binary data using a Base64 representation
+gem 'base64', '~> 0.1.0'
+# Use bigdecimal to operate big decimal
+gem 'bigdecimal'
+# Use mutex_m to handle extended objects like a Mutex
+gem 'mutex_m', '~> 0.3.0'
 
 
 group :development, :test do
