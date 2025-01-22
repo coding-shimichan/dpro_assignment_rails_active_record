@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '3.3.6'
+ruby '3.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '6.1.7.7'
@@ -22,14 +22,6 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'rails-i18n'
-# The CSV library provides a complete interface to CSV files and data
-gem 'csv', '~> 3.0'
-# Support for encoding and decoding binary data using a Base64 representation
-gem 'base64', '~> 0.1.0'
-# Use bigdecimal to operate big decimal
-gem 'bigdecimal'
-# Use mutex_m to handle extended objects like a Mutex
-gem 'mutex_m', '~> 0.3.0'
 
 
 group :development, :test do
@@ -51,6 +43,7 @@ group :development do
 end
 
 group :test do
+  gem 'capybara', '>= 2.15'
   gem 'rails-controller-testing'
   gem "shoulda-matchers"
   gem 'webdrivers'
