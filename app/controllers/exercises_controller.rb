@@ -17,6 +17,12 @@ class ExercisesController < ApplicationController
     #   * joinsを使うこと
     #   * 取得したAddressのインスタンスにorders_countと呼びかけると注文の数を返すこと
     @address = Address
+      .joins(:orders)
+      .select("addresses.*, COUNT(orders.id) AS orders_count")
+      .group("addresses.id")
+      .order("orders_count DESC")
+      .limit(1)
+      .first
   end
 
   def exercise4 
