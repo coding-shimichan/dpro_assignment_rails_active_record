@@ -22,6 +22,8 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'rails-i18n'
+# The CSV library provides a complete interface to CSV files and data
+gem 'csv', '~> 3.0'
 # Support for encoding and decoding binary data using a Base64 representation
 gem 'base64', '~> 0.1.0'
 # Use bigdecimal to operate big decimal
